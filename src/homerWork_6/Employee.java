@@ -2,13 +2,13 @@ package homerWork_6;
 
 public class Employee extends Person {
     int salery;
-    Employee(String name, int age, String pol, int salery) {
-        super(name, age, pol);
+
+    public Employee(String name, int age, char gender, int salery) {
+        super(name, age, gender);
         this.salery = salery;
     }
 
-    boolean isSameName(Employee employee,String name){
-        String name1 = employee.getName();
-        return name1.equals(name);
+    boolean isSameName(Employee employee, String name){
+        return employee.getName().equals(name);
     }
 }
