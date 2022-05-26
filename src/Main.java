@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,7 @@ public class Main {
         System.out.println(list);
 
         List<Integer> list1= new ArrayList<>();
+
 
     }
 }

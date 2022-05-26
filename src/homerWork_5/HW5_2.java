@@ -1,4 +1,4 @@
-package homerWork;
+package homerWork_5;
 
 public class HW5_2 {
 
