@@ -1,8 +1,5 @@
 package homework_7;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -16,11 +13,11 @@ public class HW_7_1 {
         Employee7_1 employee3 = new Employee7_1("Anna", 700);
 
         Manager7_1 manager1 = new Manager7_1("Gennadiy", 1000, 5);
-        Manager7_1 manager2 = new Manager7_1("Maryna", 500, 10);
+        Manager7_1 manager2 = new Manager7_1("Maryna", 500, 32);
         Manager7_1 manager3 = new Manager7_1("Anna", 700, 18);
 
         Manager7_1[] arrOfManager = {manager1, manager2, manager3};
-        List<Manager7_1> listOfManagers = findNameFromSubString(arrOfManager, "Ge");
+        List<Manager7_1> listOfManagers = findNameFromSubString(arrOfManager, "na");
 
         Employee7_1[] arrOfEmployee = {employee1, employee2, employee3};
         List<Employee7_1> listOfEmployee = findNameFromSubString(arrOfEmployee, "na");
@@ -35,26 +32,33 @@ public class HW_7_1 {
         for(Manager7_1 list : listOfManagers){
             System.out.println("Manager " + list.getName() + " has salary ---> " + list.getSalary());
         }
-//        System.out.println(listOfEmployee.get(0).getName());
-//        System.out.println(listOfEmployee.get(1).getName());
 
-        //Employee7_1 nameFromArrayOfEmployee = findNameArrays(arrOfEmployee, "Anna");
-        //Employee7_1 nameFromArrayOfEmployee1 = findNameFromSubString(arrOfEmployee, "enn");
+        printLine();
 
-//        System.out.println(nameFromArrayOfEmployee1.getName()
-//                + " has salary "
-//                + nameFromArrayOfEmployee1.getSalary());
+        System.out.println("бюджета для всех Managers " + sumSalaryOfAllEmployee(arrOfManager));
+        System.out.println("бюджета для всех Employees " + sumSalaryOfAllEmployee(arrOfEmployee));
 
+        printLine();
 
-//        Manager7_1 manager1 = new Manager7_1("Gena", 1000, 25);
-//
-//        System.out.println(manager1.getSalary());
-//
-//        Director7_1 director1 = new Director7_1("Gena", 1000, 7);
-//
-//        System.out.println(director1.getSalary());
+        System.out.println("Smallest salary from all Managers is " + returnSmallestSalary(arrOfManager));
+        System.out.println("Smallest Salary from all Employees is " + returnSmallestSalary(arrOfEmployee));
 
+        printLine();
+        System.out.println("Biggest salary from all Managers is " + returnBiggestSalary(arrOfManager));
+        System.out.println("Biggest Salary from all Employees is " + returnBiggestSalary(arrOfEmployee));
 
+        printLine();
+        System.out.println("Smallest Number of subordinates from all Managers is "
+                            + returnSmallestEmployeeFromManager(arrOfManager));
 
+        printLine();
+        System.out.println("Biggest Number of subordinates from all Managers is "
+                + returnBiggestEmployeeFromManager(arrOfManager));
+
+        printLine();
+        System.out.println("Higest markup from all Managers is "  + searchHighestMarkup(arrOfManager));
+
+        printLine();
+        System.out.println("Higest markup from all Managers is "  + searchLowersttMarkup(arrOfManager));
     }
 }
