@@ -1,8 +1,8 @@
 package helpUtilites;
 
-import homework_7.Director7_1;
-import homework_7.Employee7_1;
-import homework_7.Manager7_1;
+import homework_7_1.Director7_1;
+import homework_7_1.Employee7_1;
+import homework_7_1.Manager7_1;
 
 import java.util.ArrayList;
 import java.util.List;

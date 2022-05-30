@@ -1,4 +1,4 @@
-package homework_7;
+package homework_7_1;
 
 public class Director7_1 extends Manager7_1 {
 

@@ -1,4 +1,4 @@
-package homework_7;
+package homework_7_1;
 
 import java.util.List;
 

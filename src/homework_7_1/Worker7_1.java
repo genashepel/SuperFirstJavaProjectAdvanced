@@ -1,4 +1,4 @@
-package homework_7;
+package homework_7_1;
 
 public class Worker7_1 extends Employee7_1 {
 

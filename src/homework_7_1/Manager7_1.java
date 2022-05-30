@@ -1,4 +1,4 @@
-package homework_7;
+package homework_7_1;
 
 public class Manager7_1 extends Worker7_1 {
     int numberOfSubordinates;

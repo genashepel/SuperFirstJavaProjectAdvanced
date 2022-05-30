@@ -1,4 +1,4 @@
-package homework_7;
+package homework_7_1;
 
 public class Employee7_1 {
     public Employee7_1(String name, int baseSalary) {
