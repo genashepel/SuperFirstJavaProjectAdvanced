@@ -9,5 +9,6 @@ public class HW7_2 {
         Employee7_2 employee2 = new Employee7_2("Maryna", 49, 'F', 230);
 
         System.out.println(employee1.getSalary(getMonthArray()));
+        System.out.println(employee2.getSalary(getMonthArray()));
     }
 }

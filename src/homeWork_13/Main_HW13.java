@@ -9,7 +9,7 @@ public class Main_HW13 {
         collors.add("White.");
         collors.add("Tan.");
         collors.add("Yellow.");
-        collors.add("Black");
+        collors.add("Black.");
         collors.add("Orange.");
         collors.add("Red.");
         collors.add("Pink.");
@@ -23,22 +23,21 @@ public class Main_HW13 {
         System.out.println(collors.size());
 
         //Version1
-        for (int i = collors.size() - 1; i >= 0; i--) {
+        for (int i = collors.size(); --i > 0;) {
             if (collors.get(i).toLowerCase().contains("l")) {
                 collors.remove(i);
-                //i--;
             }
         }
 
         //Version2
-        for (int i = 0; i < collors.size(); i++) {
-            if (collors.get(i).toLowerCase().contains("l")) {
-                collors.remove(i);
-                i--;
-            }
-        }
+//        for (int i = 0; i < collors.size(); i++) {
+//            if (collors.get(i).toLowerCase().contains("l")) {
+//                collors.remove(i);
+//                i--;
+//            }
+//        }
         //Version3
-        //collors.removeIf(i -> i.toLowerCase().contains("l"));
+//        collors.removeIf(i -> i.toLowerCase().contains("l"));
 
         System.out.println(collors);
         System.out.println("\n");
@@ -84,6 +83,7 @@ public class Main_HW13 {
         }
         arrayOfInteger.removeAll(toRemove);
         System.out.println(arrayOfInteger);
+
 
     }
 
